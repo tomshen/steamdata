@@ -1,7 +1,11 @@
+import os
 from flask import Flask, render_template, abort
 import requests
-from secrets import STEAM_API_KEY
 app = Flask(__name__)
+try:
+    from secrets import STEAM_API_KEY
+except:
+    STEAM_API_KEY = os.environ['STEAM_API_KEY']
 
 def update_game_data():
     from steamscraper.steamscraper import SteamScraper

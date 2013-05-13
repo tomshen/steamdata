@@ -38,13 +38,15 @@ $.getJSON('/games', function(all_games) {
                        '</tr></thead>'
     return table_header + '<tbody>' + games.map(format_game_data).join('') + '</tbody></table>'
   }
-  $('#loadgames').click(function() {
-    var steamid = document.getElementById('steamid').value
+  function load_steam_data(steamid) {
+    if(steamid.indexOf('/') !== -1) {
+      steamid = steamid.slice(steamid.lastIndexOf('/')+1)
+    }
     if(steamid && /^\d+$/.test(steamid) && steamid.length === 17 && steamid.indexOf("7656119") === 0) {
       try {
         $.getJSON('/info/' + steamid, function(data) {
           try {
-            var name = data.response.players[0].realname
+            var name = data.response.players[0].realname || data.response.players[0].personaname || 'Your'
             var profileurl = data.response.players[0].profileurl
             document.querySelector('header').innerHTML =
                 '<a href="' + profileurl + '">' + name + '\'s Steam Library</a>'
@@ -65,5 +67,18 @@ $.getJSON('/games', function(all_games) {
     else {
       alert('Please enter a valid Steam ID.')
     }
-  })
+  }
+  $('#loadgames').click(function() {
+    var steamid = document.getElementById('steamidinput').value
+    if(steamid.indexOf('/') !== -1) {
+      steamid = steamid.slice(steamid.lastIndexOf('/')+1)
+    }
+    window.location = '/?steamid=' + steamid
+  }) 
+  if(steamid) {
+    load_steam_data(String(steamid))
+  }
+  else {
+    $('#idinput').show()
+  }
 })

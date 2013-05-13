@@ -31,7 +31,7 @@ strong {
   color: red;
 }
 
-#info p {
+p {
   margin: 0 auto;
   width: 55%;
   text-align: center;
@@ -42,6 +42,7 @@ strong {
   margin: 0 auto;
   width: 80%;
   border-collapse: collapse;
+  margin-bottom: 1em;
   text-align: left;
 }
 #games tr {
@@ -72,12 +73,12 @@ strong {
 }
 
 footer {
+  border-top: 2px solid lightgrey;
+  padding: 1em;
+  margin: 0 auto;
+  width: 80%;
   font-size: 75%;
-  bottom: 0;
-  padding: 0.2em;
-  position: fixed;
   text-align: center;
-  width: 100%;
 }
 
 footer a, footer a:visited {

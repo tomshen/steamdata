@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, request
 import requests
 app = Flask(__name__)
 try:
@@ -17,7 +17,11 @@ def is_steam_id(id):
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    if request.args.get('steamid', ''):
+        return render_template('index.html', steamid=request.args.get('steamid', ''))
+    else:
+        return render_template('index.html', steamid='')
+
 
 @app.route('/info/<steamid>')
 def info(steamid):

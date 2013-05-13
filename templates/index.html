@@ -8,20 +8,20 @@
 </head>
 <body>
   <section>
-  <header>Steam Game Library Info</header>
-  
-  <div id="info">
-    <p>
-      <label>Steam ID:</label>
-      <input id="steamid" type="text" placeholder="http://steamcommunity.com/id/7656119xxxxxxxxxx" size=50>
-      <button id="loadgames">Load your Steam library!</button>
-    </p>
-  </div>
+    <header>Steam Game Library Info</header>
+    <div id="info">
+      <p id='idinput' style='display:none'>
+        <label>Steam ID:</label>
+        <input id="steamidinput" type="text" placeholder="http://steamcommunity.com/id/7656119xxxxxxxxxx" size=50>
+        <button id="loadgames">Load your Steam library!</button>
+      </p>
+    </div>
+    <footer>
+      Created by <a href="http://www.tomshen.me/">Tom Shen</a>.
+    </footer>
   </section>
-  <footer>
-    Created by <a href="http://www.tomshen.me/">Tom Shen</a>.
-  </footer>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script type="text/javascript">var steamid = '{{ steamid }}'</script>
   <script src="/static/steamdata.js"></script>
 </body>
 </html>

@@ -69,7 +69,7 @@ p {
   border-bottom: 1px red dotted;
 }
 #games a:hover{
-  color: inherit;
+  color: red;
   border-bottom: 1px red solid;
 }
 

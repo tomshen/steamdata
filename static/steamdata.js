@@ -1,4 +1,6 @@
 $.getJSON('/games', function(all_games) {
+  document.querySelector('footer').innerHTML += 
+      'Steam data last updated on ' + all_games.last_updated.slice(0,10) + '.'
   function format_games_data(data) {
     function format_game_data(game) {
       var img_url = 'http://media.steampowered.com/steamcommunity/public/images/apps/'

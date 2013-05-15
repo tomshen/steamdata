@@ -22,6 +22,12 @@ $.getJSON('/games', function(all_games) {
       } else output += '<td class="game_icon"><img src="http://placehold.it/34x34"></td>'
       if(details) {
         output += '<td><a href="' + details.url + '">' + game.name + '</a></td>'
+        output += '<td class="game_price">' + details.price + '</td>'
+        output += '<td class="game_released">' + details.released + '</td>'
+        if(details.score)
+          output += '<td class="game_score">' + details.score + '</td>'
+        else
+          output += '<td class="game_score">No data.</td>'
         output += '<td class="game_platforms">' + details.platforms.join(', ') + '</td>'
       } else {
         output += '<td class="game_name">' + game.name + '</td>'
@@ -34,15 +40,21 @@ $.getJSON('/games', function(all_games) {
     var table_header = '<table id="games"><thead><tr>' + 
                        '<th class="game_icon"></th>' + 
                        '<th class="game_name">Name</th>' +
+                       '<th class="game_price">Price ($)</th>' +
+                       '<th class="game_released">Release Date</th>' +
+                       '<th class="game_score">Metascore</th>' +
                        '<th class="game_platforms">Platforms</th>' +
                        '</tr></thead>'
     return table_header + '<tbody>' + games.map(format_game_data).join('') + '</tbody></table>'
+  }
+  function is_steamid(steamidid) {
+    return steamid && /^\d+$/.test(steamid) && steamid.length === 17 && steamid.indexOf("7656119") === 0;    
   }
   function load_steam_data(steamid) {
     if(steamid.indexOf('/') !== -1) {
       steamid = steamid.slice(steamid.lastIndexOf('/')+1)
     }
-    if(steamid && /^\d+$/.test(steamid) && steamid.length === 17 && steamid.indexOf("7656119") === 0) {
+    if(is_steamid(steamid)) {
       try {
         $.getJSON('/info/' + steamid, function(data) {
           try {
@@ -73,7 +85,11 @@ $.getJSON('/games', function(all_games) {
     if(steamid.indexOf('/') !== -1) {
       steamid = steamid.slice(steamid.lastIndexOf('/')+1)
     }
-    window.location = '/?steamid=' + steamid
+    if(is_steamid(load_steam_data)) {
+      window.location = '/?steamid=' + steamid
+    } else {
+      alert('Please enter a valid Steam ID.')
+    }
   }) 
   if(steamid) {
     load_steam_data(String(steamid))

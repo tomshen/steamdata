@@ -1,5 +1,5 @@
 {
-    "game_count": 1987, 
+    "game_count": 1990, 
     "games": [
         {
             "name": "1... 2... 3... KICK IT! (Drop That Beat Like an Ugly Baby)", 
@@ -309,7 +309,7 @@
             "released": "Jan 24, 2013", 
             "score": 77, 
             "appid": 228400, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/228400/capsule_sm_120.jpg?t=1367413995"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/228400/capsule_sm_120.jpg?t=1368550583"
         }, 
         {
             "name": "Ace of Spades", 
@@ -1187,7 +1187,7 @@
             "url": "http://store.steampowered.com/app/217690/", 
             "price": "9.99", 
             "released": "Apr 12, 2013", 
-            "score": 79, 
+            "score": 75, 
             "appid": 217690, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/217690/capsule_sm_120.jpg?t=1368052202"
         }, 
@@ -1230,7 +1230,7 @@
             "price": "14.99", 
             "released": "May 15, 2013", 
             "appid": 236730, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/236730/capsule_sm_120.jpg?t=1367309209"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/236730/capsule_sm_120.jpg?t=1368564269"
         }, 
         {
             "name": "Anomaly: Warzone Earth", 
@@ -1280,7 +1280,6 @@
             "url": "http://store.steampowered.com/app/113400/", 
             "price": "Free to Play", 
             "released": "Dec 6, 2011", 
-            "score": 56, 
             "appid": 113400, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/113400/capsule_sm_120.jpg?t=1366887408"
         }, 
@@ -2205,7 +2204,7 @@
             "url": "http://store.steampowered.com/app/229600/", 
             "price": "9.99", 
             "released": "Feb 6, 2013", 
-            "score": 63, 
+            "score": 62, 
             "appid": 229600, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/229600/capsule_sm_120.jpg?t=1367414246"
         }, 
@@ -2290,7 +2289,7 @@
             "released": "Mar 25, 2013", 
             "score": 94, 
             "appid": 8870, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/8870/capsule_sm_120.jpg?t=1366940147"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/8870/capsule_sm_120.jpg?t=1368468696"
         }, 
         {
             "name": "2", 
@@ -2314,7 +2313,7 @@
             "released": "Aug 21, 2007", 
             "score": 96, 
             "appid": 7670, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/7670/capsule_sm_120.jpg?t=1332875141"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/7670/capsule_sm_120.jpg?t=1368468420"
         }, 
         {
             "name": "Biozone", 
@@ -2750,7 +2749,7 @@
             "released": "Oct 26, 2009", 
             "score": 81, 
             "appid": 8980, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/8980/capsule_sm_120.jpg?t=1354669123"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/8980/capsule_sm_120.jpg?t=1368468591"
         }, 
         {
             "name": "Borderlands 2", 
@@ -2764,7 +2763,7 @@
             "released": "Sep 17, 2012", 
             "score": 89, 
             "appid": 49520, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/49520/capsule_sm_120.jpg?t=1358877408"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/49520/capsule_sm_120.jpg?t=1368552008"
         }, 
         {
             "name": "Borderlands: Game of the Year", 
@@ -2853,13 +2852,17 @@
             "image": "http://cdn2.steampowered.com/v/gfx/apps/107300/capsule_sm_120.jpg?t=1355252399"
         }, 
         {
-            "url": "http://store.steampowered.com/app/232950/", 
-            "platforms": [
-                "Windows"
-            ], 
-            "image": "http://cdn2.steampowered.com/v/betagfx/apps/232950/capsule_sm_120.jpg?t=1361205978", 
             "name": "Bridge Project", 
-            "appid": 232950
+            "platforms": [
+                "Steamplay", 
+                "Windows", 
+                "Mac"
+            ], 
+            "url": "http://store.steampowered.com/app/232950/", 
+            "price": "19.99", 
+            "released": "Mar 28, 2013", 
+            "appid": 232950, 
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/232950/capsule_sm_120.jpg?t=1365697042"
         }, 
         {
             "name": "BRINK", 
@@ -2934,7 +2937,7 @@
             "released": "Oct 8, 2008", 
             "score": 79, 
             "appid": 15390, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/15390/capsule_sm_120.jpg?t=1293655222"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/15390/capsule_sm_120.jpg?t=1367416447"
         }, 
         {
             "name": "Brothers in Arms: Road to Hill 30", 
@@ -2951,14 +2954,17 @@
         {
             "name": "Brutal Legend", 
             "platforms": [
-                "Windows"
+                "Steamplay", 
+                "Windows", 
+                "Mac", 
+                "Linux"
             ], 
             "url": "http://store.steampowered.com/app/225260/", 
             "price": "19.99", 
             "released": "Feb 26, 2013", 
             "score": 80, 
             "appid": 225260, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/225260/capsule_sm_120.jpg?t=1361366188"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/225260/capsule_sm_120.jpg?t=1368061672"
         }, 
         {
             "name": "Buccaneer: The Pursuit of Infamy", 
@@ -3049,7 +3055,7 @@
             "released": "Oct 21, 2008", 
             "score": 72, 
             "appid": 12200, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/12200/capsule_sm_120.jpg?t=1361309020"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/12200/capsule_sm_120.jpg?t=1368467817"
         }, 
         {
             "name": "Bumbledore", 
@@ -3259,7 +3265,7 @@
             "released": "Nov 12, 2012", 
             "score": 74, 
             "appid": 202970, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/202970/capsule_sm_120.jpg?t=1368122372"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/202970/capsule_sm_120.jpg?t=1368572671"
         }, 
         {
             "name": "2", 
@@ -3293,7 +3299,7 @@
             "price": "14.99", 
             "released": "May 22, 2013", 
             "appid": 204450, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/204450/capsule_sm_120.jpg?t=1368216270"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/204450/capsule_sm_120.jpg?t=1368562757"
         }, 
         {
             "name": ": Bound in Blood", 
@@ -3746,7 +3752,7 @@
             "url": "http://store.steampowered.com/app/225420/", 
             "price": "19.99", 
             "released": "Apr 2, 2013", 
-            "score": 71, 
+            "score": 72, 
             "appid": 225420, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/225420/capsule_sm_120.jpg?t=1366109721"
         }, 
@@ -3795,7 +3801,7 @@
             "released": "Apr 6, 2007", 
             "score": 67, 
             "appid": 3980, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/3980/capsule_sm_120.jpg?t=1345485635"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/3980/capsule_sm_120.jpg?t=1368468697"
         }, 
         {
             "name": "Civilization IV: Beyond the Sword", 
@@ -4210,7 +4216,18 @@
             "price": "59.99", 
             "released": "Jun 25, 2013", 
             "appid": 231430, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/231430/capsule_sm_120.jpg?t=1368212897"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/231430/capsule_sm_120.jpg?t=1368566463"
+        }, 
+        {
+            "name": "Company of Heroes 2", 
+            "platforms": [
+                "Windows"
+            ], 
+            "url": "http://store.steampowered.com/app/231430/", 
+            "price": "59.99", 
+            "released": "Jun 25, 2013", 
+            "appid": 231430, 
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/55300/capsule_sm_120.jpg?t=1365182735"
         }, 
         {
             "name": "Company of Heroes: Opposing Fronts", 
@@ -4674,7 +4691,7 @@
                 "Mac"
             ], 
             "url": "http://store.steampowered.com/app/105300/", 
-            "price": "4.99", 
+            "price": "1.99", 
             "released": "Jun 20, 2011", 
             "score": 81, 
             "appid": 105300, 
@@ -5178,7 +5195,7 @@
             "released": "Nov 2, 2011", 
             "score": 72, 
             "appid": 24200, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/24200/capsule_sm_120.jpg?t=1363048503"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/24200/capsule_sm_120.jpg?t=1368535879"
         }, 
         {
             "name": "DCS A-10C Warthog", 
@@ -5235,7 +5252,7 @@
             "url": "http://store.steampowered.com/app/216250/", 
             "price": "39.99", 
             "released": "Apr 22, 2013", 
-            "score": 62, 
+            "score": 63, 
             "appid": 216250, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/216250/capsule_sm_120.jpg?t=1367415030"
         }, 
@@ -5365,7 +5382,7 @@
             "price": "9.99", 
             "released": "Aug 3, 2012", 
             "appid": 108700, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/108700/capsule_sm_120.jpg?t=1352404162"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/108700/capsule_sm_120.jpg?t=1368444484"
         }, 
         {
             "name": "Death to Spies", 
@@ -5529,7 +5546,7 @@
             "url": "http://store.steampowered.com/app/224600/", 
             "price": "59.99", 
             "released": "Apr 2, 2013", 
-            "score": 64, 
+            "score": 65, 
             "appid": 224600, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/224600/capsule_sm_120.jpg?t=1367505556"
         }, 
@@ -5867,7 +5884,7 @@
             "released": "Aug 22, 2012", 
             "score": 76, 
             "appid": 217290, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/217290/capsule_sm_120.jpg?t=1351894206"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/217290/capsule_sm_120.jpg?t=1368563120"
         }, 
         {
             "name": "Diner Dash:\u00ae Hometown Hero\u2122", 
@@ -6024,7 +6041,7 @@
             "released": "Oct 8, 2012", 
             "score": 91, 
             "appid": 205100, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/205100/capsule_sm_120.jpg?t=1368017460"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/205100/capsule_sm_120.jpg?t=1368557820"
         }, 
         {
             "name": "District 187: Sin Streets", 
@@ -6547,7 +6564,7 @@
             "released": "Jun 13, 2011", 
             "score": 54, 
             "appid": 57900, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/57900/capsule_sm_120.jpg?t=1340143080"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/57900/capsule_sm_120.jpg?t=1368468952"
         }, 
         {
             "name": "Dungeon Defenders", 
@@ -8889,7 +8906,7 @@
             "url": "http://store.steampowered.com/app/227480/", 
             "price": "9.99", 
             "released": "Apr 19, 2013", 
-            "score": 60, 
+            "score": 59, 
             "appid": 227480, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/227480/capsule_sm_120.jpg?t=1366639237"
         }, 
@@ -9062,7 +9079,7 @@
             "released": "Jan 6, 2011", 
             "score": 93, 
             "appid": 12100, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/12100/capsule_sm_120.jpg?t=1361309065"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/12100/capsule_sm_120.jpg?t=1368467846"
         }, 
         {
             "name": "Grand Theft Auto IV", 
@@ -9074,7 +9091,7 @@
             "released": "Dec 2, 2008", 
             "score": 90, 
             "appid": 12210, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/12210/capsule_sm_120.jpg?t=1364687510"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/12210/capsule_sm_120.jpg?t=1368468186"
         }, 
         {
             "name": "Grand Theft Auto IV: Complete Edition", 
@@ -9111,7 +9128,7 @@
             "released": "Jan 6, 2011", 
             "score": 93, 
             "appid": 12120, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/12120/capsule_sm_120.jpg?t=1363176257"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/12120/capsule_sm_120.jpg?t=1368467969"
         }, 
         {
             "name": "Grand Theft Auto: Vice City", 
@@ -9208,7 +9225,7 @@
             "price": "49.99", 
             "released": "May 27, 2013", 
             "appid": 44350, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/44350/capsule_sm_120.jpg?t=1366815326"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/44350/capsule_sm_120.jpg?t=1368544295"
         }, 
         {
             "name": "Gridrunner Revolution", 
@@ -9903,7 +9920,7 @@
             "released": "May 13, 2008", 
             "score": 77, 
             "appid": 15170, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/15170/capsule_sm_120.jpg?t=1328733487"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/15170/capsule_sm_120.jpg?t=1368442871"
         }, 
         {
             "name": "V: Hammers of Fate", 
@@ -9915,7 +9932,7 @@
             "released": "Oct 10, 2008", 
             "score": 66, 
             "appid": 15380, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/15380/capsule_sm_120.jpg?t=1270602383"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/15380/capsule_sm_120.jpg?t=1368446156"
         }, 
         {
             "name": "V: Tribes of the East", 
@@ -9927,7 +9944,7 @@
             "released": "Oct 10, 2008", 
             "score": 70, 
             "appid": 15370, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/15370/capsule_sm_120.jpg?t=1307483677"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/15370/capsule_sm_120.jpg?t=1368443968"
         }, 
         {
             "name": "Heroes Over Europe", 
@@ -10127,16 +10144,17 @@
             "image": "http://cdn2.steampowered.com/v/gfx/apps/215670/capsule_sm_120.jpg?t=1354562989"
         }, 
         {
-            "name": "Homefront", 
+            "name": "Horrid Henry", 
             "platforms": [
+                "Windows", 
                 "Windows"
             ], 
             "url": "http://store.steampowered.com/app/55100/", 
             "price": "34.99", 
-            "released": "Mar 14, 2011", 
+            "released": "Aug 10, 2010", 
             "score": 70, 
             "appid": 55100, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/55100/capsule_sm_120.jpg?t=1324343614"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/38240/capsule_sm_120.jpg?t=1365603028"
         }, 
         {
             "name": "Hospital Tycoon", 
@@ -10965,6 +10983,7 @@
             "url": "http://store.steampowered.com/app/233230/", 
             "price": "7.99", 
             "released": "Apr 24, 2013", 
+            "score": 79, 
             "appid": 233230, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/233230/capsule_sm_120.jpg?t=1366795520"
         }, 
@@ -11325,7 +11344,7 @@
             "released": "Nov 8, 2011", 
             "score": 83, 
             "appid": 110800, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/110800/capsule_sm_120.jpg?t=1355883473"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/110800/capsule_sm_120.jpg?t=1368468075"
         }, 
         {
             "name": "La-Mulana", 
@@ -11731,6 +11750,16 @@
             "image": "http://cdn2.steampowered.com/v/gfx/apps/221260/capsule_sm_120.jpg?t=1365704184"
         }, 
         {
+            "name": "Loadout", 
+            "url": "http://store.steampowered.com/app/208090/", 
+            "price": "19.99", 
+            "platforms": [
+                "Windows"
+            ], 
+            "appid": 208090, 
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/208090/capsule_sm_120.jpg?t=1368476506"
+        }, 
+        {
             "name": "Loki", 
             "platforms": [
                 "Windows"
@@ -11814,7 +11843,7 @@
             "released": "Apr 5, 2013", 
             "score": 51, 
             "appid": 230650, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/230650/capsule_sm_120.jpg?t=1365182294"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/230650/capsule_sm_120.jpg?t=1368448793"
         }, 
         {
             "name": "Lost Horizon", 
@@ -11998,6 +12027,17 @@
             "image": "http://cdn2.steampowered.com/v/gfx/apps/15920/capsule_sm_120.jpg?t=1246669740"
         }, 
         {
+            "name": "Luxor 2 HD", 
+            "platforms": [
+                "Windows"
+            ], 
+            "url": "http://store.steampowered.com/app/234350/", 
+            "price": "9.99", 
+            "released": "May 13, 2013", 
+            "appid": 234350, 
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/234350/capsule_sm_120.jpg?t=1368452707"
+        }, 
+        {
             "name": "Luxor 3", 
             "platforms": [
                 "Steamplay", 
@@ -12177,7 +12217,7 @@
             "released": "Aug 23, 2010", 
             "score": 77, 
             "appid": 50130, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/50130/capsule_sm_120.jpg?t=1331313069"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/50130/capsule_sm_120.jpg?t=1368470362"
         }, 
         {
             "name": "Mafia II: Digital Deluxe Edition", 
@@ -12364,7 +12404,7 @@
             "price": "9.99", 
             "released": "Apr 20, 2009", 
             "appid": 8840, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/8840/capsule_sm_120.jpg?t=1241808209"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/8840/capsule_sm_120.jpg?t=1368469623"
         }, 
         {
             "name": "Making History II: The War of the World", 
@@ -12402,7 +12442,7 @@
             "released": "Jan 4, 2008", 
             "score": 75, 
             "appid": 12130, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/12130/capsule_sm_120.jpg?t=1361313209"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/12130/capsule_sm_120.jpg?t=1368468177"
         }, 
         {
             "name": "MapleStory", 
@@ -12447,17 +12487,18 @@
             "url": "http://store.steampowered.com/app/232750/", 
             "price": "19.99", 
             "released": "Apr 26, 2013", 
-            "score": 60, 
+            "score": 59, 
             "appid": 232750, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/232750/capsule_sm_120.jpg?t=1366983478"
         }, 
         {
-            "url": "http://store.steampowered.com/app/226320/", 
+            "name": "Marvel Heroes", 
             "platforms": [
                 "Windows"
             ], 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/226320/capsule_sm_120.jpg?t=1368214206", 
-            "name": "Marvel Heroes", 
+            "url": "http://store.steampowered.com/app/226320/", 
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/226320/capsule_sm_120.jpg?t=1368552066", 
+            "released": "Jun 4, 2013", 
             "appid": 226320
         }, 
         {
@@ -12577,7 +12618,7 @@
             "released": "Jan 4, 2008", 
             "score": 89, 
             "appid": 12140, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/12140/capsule_sm_120.jpg?t=1361313585"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/12140/capsule_sm_120.jpg?t=1368468307"
         }, 
         {
             "name": "Max Payne 2", 
@@ -12589,7 +12630,7 @@
             "released": "Jan 4, 2008", 
             "score": 86, 
             "appid": 12150, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/12150/capsule_sm_120.jpg?t=1361313752"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/12150/capsule_sm_120.jpg?t=1368468257"
         }, 
         {
             "name": "Max Payne 3", 
@@ -12601,7 +12642,7 @@
             "released": "May 31, 2012", 
             "score": 87, 
             "appid": 204100, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/204100/capsule_sm_120.jpg?t=1363018509"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/204100/capsule_sm_120.jpg?t=1368468379"
         }, 
         {
             "name": "Mayhem Intergalactic", 
@@ -12815,7 +12856,7 @@
             "released": "Mar 18, 2010", 
             "score": 81, 
             "appid": 43110, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/43110/capsule_sm_120.jpg?t=1360228756"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/43110/capsule_sm_120.jpg?t=1368484058"
         }, 
         {
             "name": "Metro: Last Light", 
@@ -12825,8 +12866,9 @@
             "url": "http://store.steampowered.com/app/43160/", 
             "price": "49.99", 
             "released": "May 13, 2013", 
+            "score": 83, 
             "appid": 43160, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/43160/capsule_sm_120.jpg?t=1367854382"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/43160/capsule_sm_120.jpg?t=1368578301"
         }, 
         {
             "name": "Mevo and The Grooveriders", 
@@ -13135,7 +13177,7 @@
             "price": "9.99", 
             "released": "Apr 20, 2009", 
             "appid": 8830, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/8830/capsule_sm_120.jpg?t=1307544097"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/8830/capsule_sm_120.jpg?t=1368469625"
         }, 
         {
             "name": "Mole Control", 
@@ -13578,6 +13620,19 @@
             "image": "http://cdn2.steampowered.com/v/gfx/apps/220420/capsule_sm_120.jpg?t=1351030826"
         }, 
         {
+            "name": "Nancy Drew: the Ghost of Thornton Hall", 
+            "platforms": [
+                "Steamplay", 
+                "Windows", 
+                "Mac"
+            ], 
+            "url": "http://store.steampowered.com/app/226820/", 
+            "price": "19.99", 
+            "released": "May 14, 2013", 
+            "appid": 226820, 
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/226820/capsule_sm_120.jpg?t=1368547114"
+        }, 
+        {
             "name": "Nancy Drew: Tomb of the Lost Queen", 
             "platforms": [
                 "Steamplay", 
@@ -13935,7 +13990,7 @@
             "released": "Oct 30, 2012", 
             "score": 90, 
             "appid": 219600, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/219600/capsule_sm_120.jpg?t=1367412954"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/219600/capsule_sm_120.jpg?t=1368469839"
         }, 
         {
             "name": "NecroVision", 
@@ -14884,7 +14939,7 @@
                 "Windows"
             ], 
             "url": "http://store.steampowered.com/app/226980/", 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/226980/capsule_sm_120.jpg?t=1368220191", 
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/226980/capsule_sm_120.jpg?t=1368504788", 
             "released": "May 10, 2013", 
             "appid": 226980
         }, 
@@ -14981,7 +15036,7 @@
             "released": "Nov 20, 2012", 
             "score": 84, 
             "appid": 218230, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/218230/capsule_sm_120.jpg?t=1368219877"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/218230/capsule_sm_120.jpg?t=1368568784"
         }, 
         {
             "name": "Plant Tycoon", 
@@ -15020,7 +15075,7 @@
             "released": "Apr 26, 2013", 
             "score": 80, 
             "appid": 234710, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/234710/capsule_sm_120.jpg?t=1367856232"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/234710/capsule_sm_120.jpg?t=1368483469"
         }, 
         {
             "name": "Poker Night at the Inventory", 
@@ -15261,17 +15316,6 @@
             "image": "http://cdn2.steampowered.com/v/gfx/apps/224220/capsule_sm_120.jpg?t=1367425689"
         }, 
         {
-            "name": "Pride of Nations", 
-            "platforms": [
-                "Windows"
-            ], 
-            "url": "http://store.steampowered.com/app/73190/", 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/73190/capsule_sm_120.jpg?t=1349402577", 
-            "released": "Jun 7, 2011", 
-            "score": 70, 
-            "appid": 73190
-        }, 
-        {
             "name": "Primal Carnage", 
             "platforms": [
                 "Windows"
@@ -15304,9 +15348,9 @@
             ], 
             "url": "http://store.steampowered.com/app/235360/", 
             "price": "14.99", 
-            "released": "May 21, 2013", 
+            "released": "Jun 5, 2013", 
             "appid": 235360, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/235360/capsule_sm_120.jpg?t=1367581133"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/235360/capsule_sm_120.jpg?t=1368443470"
         }, 
         {
             "name": "Primordia", 
@@ -16007,7 +16051,7 @@
                 "Windows"
             ], 
             "url": "http://store.steampowered.com/app/211500/", 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/211500/capsule_sm_120.jpg?t=1360952514", 
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/211500/capsule_sm_120.jpg?t=1368463101", 
             "released": "Feb 12, 2013", 
             "appid": 211500
         }, 
@@ -16056,7 +16100,7 @@
             "released": "May 4, 2007", 
             "score": 80, 
             "appid": 7610, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/7610/capsule_sm_120.jpg?t=1334876263"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/7610/capsule_sm_120.jpg?t=1368469955"
         }, 
         {
             "name": "Railroad Tycoon II Platinum", 
@@ -16214,16 +16258,17 @@
             "image": "http://cdn2.steampowered.com/v/gfx/apps/234190/capsule_sm_120.jpg?t=1367267953"
         }, 
         {
-            "name": "Recettear: An Item Shop's Tale", 
+            "name": "Red Bull X-Fighters", 
             "platforms": [
+                "Windows", 
                 "Windows"
             ], 
             "url": "http://store.steampowered.com/app/70400/", 
             "price": "19.99", 
-            "released": "Sep 10, 2010", 
+            "released": "Oct 13, 2011", 
             "score": 82, 
             "appid": 70400, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/70400/capsule_sm_120.jpg?t=1316028701"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/61230/capsule_sm_120.jpg?t=1364257104"
         }, 
         {
             "name": "Red Faction", 
@@ -16324,6 +16369,17 @@
             "image": "http://cdn2.steampowered.com/v/gfx/apps/228300/capsule_sm_120.jpg?t=1368036022"
         }, 
         {
+            "name": "Renaissance Heroes", 
+            "platforms": [
+                "Windows"
+            ], 
+            "url": "http://store.steampowered.com/app/221790/", 
+            "price": "Free to Play", 
+            "released": "May 7, 2013", 
+            "appid": 221790, 
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/221790/capsule_sm_120.jpg?t=1368583409"
+        }, 
+        {
             "name": "Renegade Ops", 
             "platforms": [
                 "Windows"
@@ -16343,7 +16399,7 @@
             "url": "http://store.steampowered.com/app/221040/", 
             "price": "39.99", 
             "released": "Mar 22, 2013", 
-            "score": 71, 
+            "score": 70, 
             "appid": 221040, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/221040/capsule_sm_120.jpg?t=1366929890"
         }, 
@@ -16366,7 +16422,7 @@
             "price": "49.99", 
             "released": "May 20, 2013", 
             "appid": 222480, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/222480/capsule_sm_120.jpg?t=1368212090"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/222480/capsule_sm_120.jpg?t=1368559304"
         }, 
         {
             "name": "Resident Evil: Operation Raccoon City", 
@@ -16595,17 +16651,6 @@
             "released": "Jun 1, 2007", 
             "appid": 2540, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/2540/capsule_sm_120.jpg?t=1319842381"
-        }, 
-        {
-            "name": "Rise of Prussia", 
-            "platforms": [
-                "Windows"
-            ], 
-            "url": "http://store.steampowered.com/app/42870/", 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/42870/capsule_sm_120.jpg?t=1307487391", 
-            "released": "Mar 9, 2010", 
-            "score": 54, 
-            "appid": 42870
         }, 
         {
             "name": "Rise of the Argonauts", 
@@ -17078,7 +17123,7 @@
             "url": "http://store.steampowered.com/app/207930/", 
             "price": "14.99", 
             "released": "Apr 16, 2013", 
-            "score": 61, 
+            "score": 62, 
             "appid": 207930, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/207930/capsule_sm_120.jpg?t=1366616697"
         }, 
@@ -17245,7 +17290,7 @@
             "released": "Apr 15, 2011", 
             "score": 70, 
             "appid": 91600, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/91600/capsule_sm_120.jpg?t=1368171643"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/91600/capsule_sm_120.jpg?t=1368493100"
         }, 
         {
             "name": "Sanctum 2", 
@@ -17256,7 +17301,7 @@
             "price": "14.99", 
             "released": "May 15, 2013", 
             "appid": 210770, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/210770/capsule_sm_120.jpg?t=1368199374"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/210770/capsule_sm_120.jpg?t=1368493054"
         }, 
         {
             "name": "Sang-Froid - Tales of Werewolves", 
@@ -17732,7 +17777,7 @@
             "released": "Oct 25, 2006", 
             "score": 67, 
             "appid": 3960, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/3960/capsule_sm_120.jpg?t=1334876603"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/3960/capsule_sm_120.jpg?t=1368469987"
         }, 
         {
             "name": "Shellshock 2: Blood Trails", 
@@ -17941,7 +17986,7 @@
             "released": "Sep 23, 2008", 
             "score": 83, 
             "appid": 16810, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/16810/capsule_sm_120.jpg?t=1334798014"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/16810/capsule_sm_120.jpg?t=1368470264"
         }, 
         {
             "name": "III Complete", 
@@ -17967,7 +18012,7 @@
             "released": "Oct 25, 2006", 
             "score": 94, 
             "appid": 3900, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/3900/capsule_sm_120.jpg?t=1334797957"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/3900/capsule_sm_120.jpg?t=1368470261"
         }, 
         {
             "name": "Sid Meier's Civilization\u00ae V", 
@@ -17993,7 +18038,7 @@
             "released": "Oct 25, 2006", 
             "score": 88, 
             "appid": 3920, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/3920/capsule_sm_120.jpg?t=1334876400"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/3920/capsule_sm_120.jpg?t=1368470269"
         }, 
         {
             "name": "Sideway\u2122 New York", 
@@ -18681,7 +18726,7 @@
                 "Windows"
             ], 
             "url": "http://store.steampowered.com/app/217860/", 
-            "price": "14.99", 
+            "price": "9.99", 
             "released": "Feb 6, 2013", 
             "score": 48, 
             "appid": 217860, 
@@ -18908,7 +18953,7 @@
             "released": "Apr 23, 2013", 
             "score": 39, 
             "appid": 203250, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/203250/capsule_sm_120.jpg?t=1367254998"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/203250/capsule_sm_120.jpg?t=1368462550"
         }, 
         {
             "name": "Star Trek Online", 
@@ -19148,7 +19193,7 @@
             "url": "http://store.steampowered.com/app/220660/", 
             "price": "29.99", 
             "released": "Apr 26, 2013", 
-            "score": 58, 
+            "score": 57, 
             "appid": 220660, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/220660/capsule_sm_120.jpg?t=1367000911"
         }, 
@@ -19235,7 +19280,7 @@
                 "Mac"
             ], 
             "appid": 219820, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/219820/capsule_sm_120.jpg?t=1346864209"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/219820/capsule_sm_120.jpg?t=1368456022"
         }, 
         {
             "name": "Steel Storm: Burning Retribution", 
@@ -19523,6 +19568,7 @@
             "url": "http://store.steampowered.com/app/221640/", 
             "price": "2.99", 
             "released": "Nov 27, 2012", 
+            "score": 88, 
             "appid": 221640, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/221640/capsule_sm_120.jpg?t=1361988104"
         }, 
@@ -19584,7 +19630,7 @@
             "price": "3.99", 
             "released": "May 9, 2013", 
             "appid": 235250, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/235250/capsule_sm_120.jpg?t=1368187955"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/235250/capsule_sm_120.jpg?t=1368493126"
         }, 
         {
             "name": "IV Arcade Edition", 
@@ -19981,13 +20027,14 @@
             "platforms": [
                 "Steamplay", 
                 "Windows", 
-                "Mac"
+                "Mac", 
+                "Linux"
             ], 
             "url": "http://store.steampowered.com/app/234940/", 
             "price": "14.99", 
             "released": "Apr 25, 2013", 
             "appid": 234940, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/234940/capsule_sm_120.jpg?t=1366878723"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/234940/capsule_sm_120.jpg?t=1368445888"
         }, 
         {
             "name": "The Amazing Spider-Man\u2122", 
@@ -20036,7 +20083,7 @@
             "url": "http://store.steampowered.com/app/219340/", 
             "price": "Free to Play", 
             "released": "Feb 25, 2013", 
-            "score": 68, 
+            "score": 67, 
             "appid": 219340, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/219340/capsule_sm_120.jpg?t=1367414360"
         }, 
@@ -20147,19 +20194,20 @@
             "image": "http://cdn2.steampowered.com/v/gfx/apps/95700/capsule_sm_120.jpg?t=1309180441"
         }, 
         {
-            "name": "The Cave", 
+            "name": "Assault on Dark Athena", 
             "platforms": [
                 "Steamplay", 
                 "Windows", 
                 "Mac", 
-                "Linux"
+                "Linux", 
+                "Windows"
             ], 
             "url": "http://store.steampowered.com/app/221810/", 
             "price": "14.99", 
-            "released": "Jan 23, 2013", 
-            "score": 67, 
+            "released": "Jun 16, 2009", 
+            "score": 80, 
             "appid": 221810, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/221810/capsule_sm_120.jpg?t=1362025535"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/9860/capsule_sm_120.jpg?t=1365192999"
         }, 
         {
             "name": "The Clockwork Man", 
@@ -21073,13 +21121,14 @@
         }, 
         {
             "name": "Thunder Wolves", 
-            "url": "http://store.steampowered.com/app/232970/", 
-            "price": "14.99", 
             "platforms": [
                 "Windows"
             ], 
+            "url": "http://store.steampowered.com/app/232970/", 
+            "price": "14.99", 
+            "released": "May 15, 2013", 
             "appid": 232970, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/232970/capsule_sm_120.jpg?t=1368196551"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/232970/capsule_sm_120.jpg?t=1368444997"
         }, 
         {
             "name": "ThunderWheels Demo", 
@@ -22861,7 +22910,7 @@
             ], 
             "url": "http://store.steampowered.com/app/222750/", 
             "price": "39.99", 
-            "released": "May 22, 2013", 
+            "released": "May 29, 2013", 
             "appid": 222750, 
             "image": "http://cdn2.steampowered.com/v/gfx/apps/222750/capsule_sm_120.jpg?t=1367258946"
         }, 
@@ -23464,14 +23513,16 @@
         {
             "name": "X3: Reunion", 
             "platforms": [
-                "Windows"
+                "Steamplay", 
+                "Windows", 
+                "Linux"
             ], 
             "url": "http://store.steampowered.com/app/2810/", 
             "price": "9.99", 
             "released": "Jul 21, 2006", 
             "score": 71, 
             "appid": 2810, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/2810/capsule_sm_120.jpg?t=1367930330"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/2810/capsule_sm_120.jpg?t=1368569512"
         }, 
         {
             "name": "X3: Terran Conflict", 
@@ -23485,7 +23536,7 @@
             "released": "Oct 16, 2008", 
             "score": 73, 
             "appid": 2820, 
-            "image": "http://cdn2.steampowered.com/v/gfx/apps/2820/capsule_sm_120.jpg?t=1368027285"
+            "image": "http://cdn2.steampowered.com/v/gfx/apps/2820/capsule_sm_120.jpg?t=1368569472"
         }, 
         {
             "name": "X: Beyond the Frontier", 
@@ -23859,5 +23910,5 @@
             "image": "http://cdn2.steampowered.com/v/gfx/apps/3620/capsule_sm_120.jpg?t=1307724946"
         }
     ], 
-    "last_updated": "2013-05-12 20:31"
+    "last_updated": "2013-05-14 22:45"
 }

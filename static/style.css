@@ -6,7 +6,7 @@ body {
 
 section {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 header {
@@ -41,7 +41,7 @@ p {
 #games
 {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   border-collapse: collapse;
   margin-bottom: 1em;
   text-align: left;
@@ -77,7 +77,7 @@ footer {
   border-top: 2px solid lightgrey;
   padding: 1em;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   font-size: 75%;
   text-align: center;
 }

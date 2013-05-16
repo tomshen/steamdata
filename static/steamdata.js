@@ -1,4 +1,4 @@
-$.getJSON('/games', function(all_games) {
+$.getJSON('/api/games', function(all_games) {
   document.querySelector('footer').innerHTML += 
       'Steam data last updated on ' + all_games.last_updated.slice(0,10) + '.'
   function format_games_data(data) {
@@ -47,7 +47,7 @@ $.getJSON('/games', function(all_games) {
                        '</tr></thead>'
     return table_header + '<tbody>' + games.map(format_game_data).join('') + '</tbody></table>'
   }
-  function is_steamid(steamidid) {
+  function is_steamid(steamid) {
     return steamid && /^\d+$/.test(steamid) && steamid.length === 17 && steamid.indexOf("7656119") === 0;    
   }
   function load_steam_data(steamid) {
@@ -56,7 +56,7 @@ $.getJSON('/games', function(all_games) {
     }
     if(is_steamid(steamid)) {
       try {
-        $.getJSON('/info/' + steamid, function(data) {
+        $.getJSON('/api/info/' + steamid, function(data) {
           try {
             var name = data.response.players[0].realname || data.response.players[0].personaname || 'Your'
             var profileurl = data.response.players[0].profileurl
@@ -64,7 +64,7 @@ $.getJSON('/games', function(all_games) {
                 '<a href="' + profileurl + '">' + name + '\'s Steam Library</a>'
           } catch(e) {}
         })
-        $.getJSON('/games/' + steamid, function(data) {
+        $.getJSON('/api/games/' + steamid, function(data) {
           document.getElementById('info').innerHTML =
               '<p>You own <strong>' + data.response.game_count 
                + '</strong> out of <strong>' + all_games.game_count 

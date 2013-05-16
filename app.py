@@ -59,36 +59,36 @@ def get_games(steamid):
                        '&include_appinfo=1&include_played_free_games=1&format=json')
     return req.json()['response']
 
-def graph_friends(friends, depth=1):
-    def get_name(steamid):
+def get_name(steamid):
+    try:
         return get_info(steamid)['personaname']
-        try:
-            return get_info(steamid)['personaname']
-        except:
-            return 'Anonymous'
-    if depth == 0:
-        return friends
+    except:
+        return 'Anonymous'
+
+def graph_friends(steamid, depth=1):
+    if depth == 1:
+        friends = get_friends(steamid)
+        if type(friends) is list:
+            return [{'name': get_name(f['steamid']), 'steamid': f['steamid']} for f in friends]
+        else:
+            return []
     else:
-        return dict([(f['steamid'], {'name': get_name(f['steamid']),
-                    'friends': graph_friends(get_friends(f['steamid']), depth - 1)}) for f in friends])
+        friends = get_friends(steamid)
+        if type(friends) is list:
+            return [{'name': get_name(f['steamid']),
+                     'steamid': f['steamid'],
+                     'friends': graph_friends(f['steamid'], depth - 1)} for f in friends]
+        else:
+            return [] # User has not exposed friends list to public.
 
 @app.route('/api/graph/<steamid>')
 @app.route('/api/graph/<steamid>/<depth>')
 def graph(steamid, depth=1):
     if is_steamid(steamid):
-        info = get_info(steamid)
-        friends = get_friends(steamid)
-        resp = Response(json.dumps(graph_friends(friends, int(depth)), indent=4), status=200, mimetype='application/json')
-        resp.headers['Link'] = 'http://steamdata.herokuapp.com'
-        return resp
         try:
-            friends = get_friends(steamid)
-            return str(friends)
-            """
-            resp = Response(req.text, status=200, mimetype='application/json')
+            resp = Response(json.dumps(graph_friends(steamid, int(depth)), indent=4), status=200, mimetype='application/json')
             resp.headers['Link'] = 'http://steamdata.herokuapp.com'
             return resp
-            """
         except:
             return abort(404)
     else:

@@ -8,16 +8,23 @@
 </head>
 <body>
   <section>
-    <header>Steam Game Library Info</header>
-    <div id="info">
-      <p id="idinput" style="display:none">
-        <label>Steam ID:</label>
-        <input id="steamidinput" type="text" placeholder="http://steamcommunity.com/id/7656119xxxxxxxxxx" size=50>
-        <button id="loadgames">Load your Steam library!</button>
-      </p>
+    <header>Steam Games</header>
+    <div id="container">
+      <div id="info" style="display:none">
+        <p>
+          Enter your <a href="http://steamidfinder.com/" target="_blank">Steam ID</a> to display
+          a table of all your Steam games.
+        </p>
+        <p>
+          <label>Steam ID:</label>
+          <input id="steamidinput" type="text" placeholder="http://steamcommunity.com/id/7656119xxxxxxxxxx" size=50>
+          <button id="loadgames">Load your Steam library!</button>
+        </p>
+      </div>
     </div>
     <footer>
-      Created by <a href="http://www.tomshen.me/">Tom Shen</a>.
+      Created by <a href="http://www.tomshen.me/">Tom Shen</a>. 
+      Source code on <a href="https://www.github.com/tomshen/steamdata">GitHub</a>.
     </footer>
   </section>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>

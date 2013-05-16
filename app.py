@@ -1,5 +1,6 @@
 import os
-from flask import Flask, render_template, abort, request
+import json
+from flask import Flask, render_template, abort, request, Response
 import requests
 app = Flask(__name__)
 try:
@@ -28,7 +29,9 @@ def info(steamid):
     if is_steam_id(steamid):
         req = requests.get('http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=' 
                            + STEAM_API_KEY + '&steamids=' + steamid + '&format=json')
-        return req.text
+        resp = Response(req.text, status=200, mimetype='application/json')
+        resp.headers['Link'] = 'http://steamdata.herokuapp.com'
+        return resp
     else:
         return abort(404)
 
@@ -43,7 +46,9 @@ def games(steamid=None):
             req = requests.get('http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=' 
                                + STEAM_API_KEY + '&steamid=' + steamid + 
                                '&include_appinfo=1&include_played_free_games=1&format=json')
-            return req.text
+            resp = Response(req.text, status=200, mimetype='application/json')
+            resp.headers['Link'] = 'http://steamdata.herokuapp.com'
+            return resp
         else:
             return abort(404)
 

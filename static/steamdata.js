@@ -36,7 +36,7 @@ $.getJSON('/api/games', function(all_games) {
       output += '</tr>'
       return output
     }
-    var games = data.response.games
+    var games = data.games
     var table_header = '<table id="games"><thead><tr>' + 
                        '<th class="game_icon"></th>' + 
                        '<th class="game_name">Name</th>' +
@@ -58,15 +58,15 @@ $.getJSON('/api/games', function(all_games) {
       try {
         $.getJSON('/api/info/' + steamid, function(data) {
           try {
-            var name = data.response.players[0].realname || data.response.players[0].personaname || 'Your'
-            var profileurl = data.response.players[0].profileurl
+            var name = data.realname || data.personaname || 'Anonymous'
+            var profileurl = data.profileurl
             document.querySelector('header').innerHTML =
                 '<a href="' + profileurl + '">' + name + '\'s Steam Library</a>'
           } catch(e) {}
         })
         $.getJSON('/api/games/' + steamid, function(data) {
           document.getElementById('info').innerHTML =
-              '<p>You own <strong>' + data.response.game_count 
+              '<p>You own <strong>' + data.game_count 
                + '</strong> out of <strong>' + all_games.game_count 
                + '</strong> total Steam games.</p>'
           document.getElementById('info').innerHTML += format_games_data(data)

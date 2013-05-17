@@ -71,13 +71,6 @@ p {
   padding: 9px 8px 0px 8px;
   vertical-align: middle;
 }
-#games a, #game a:visited{
-  color: inherit;
-}
-#games a:hover{
-  color: red;
-  border-bottom: 1px red solid;
-}
 
 footer {
   border-top: 2px solid lightgrey;

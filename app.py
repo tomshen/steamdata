@@ -1,7 +1,10 @@
 import os
-import json
-from flask import Flask, render_template, abort, request, Response, url_for
+
 import requests
+from flask import Flask, render_template, abort, request, Response, jsonify
+
+from util import crossdomain
+
 app = Flask(__name__)
 try:
     from config import STEAM_API_KEY
@@ -83,50 +86,47 @@ def graph_friends(steamid, depth=1):
 
 @app.route('/api/graph/<steamid>')
 @app.route('/api/graph/<steamid>/<depth>')
+@crossdomain(origin='*')
 def graph(steamid, depth=1):
     if is_steamid(steamid):
         try:
-            resp = Response(json.dumps(graph_friends(steamid, int(depth)), indent=4), status=200, mimetype='application/json')
-            resp.headers['Link'] = 'http://steamdata.herokuapp.com'
-            return resp
+            return jsonify({'steamid': steamid, 'friends': graph_friends(steamid, int(depth))})
         except:
             return abort(404)
     else:
         return abort(404)
 
 @app.route('/api/friends/<steamid>')
+@crossdomain(origin='*')
 def friends(steamid):
     if is_steamid(steamid):
-        resp = Response(json.dumps(get_friends(steamid), indent=4), status=200, mimetype='application/json')
-        resp.headers['Link'] = 'http://steamdata.herokuapp.com'
-        return resp
+        return jsonify({'steamid': steamid, 'friends':get_friends(steamid)})
     else:
         return abort(404)
 
 @app.route('/api/info/<steamid>')
+@crossdomain(origin='*')
 def info(steamid):
     if is_steamid(steamid):
-        resp = Response(json.dumps(get_info(steamid), indent=4), status=200, mimetype='application/json')
-        resp.headers['Link'] = 'http://steamdata.herokuapp.com'
-        return resp
+        return jsonify(get_info(steamid))
     else:
         return abort(404)
 
 @app.route('/api/games')
 @app.route('/api/games/<steamid>')
+@crossdomain(origin='*')
 def games(steamid=None):
     games = None
     if not steamid:
         with open('steamdata.json', 'r') as f:
-            games = f.read()
+            resp = Response(f.read(), status=200, mimetype='application/json')
+            resp.headers['Link'] = 'http://steamdata.herokuapp.com'
+            return resp
     else:
         if is_steamid(steamid):
-            games = json.dumps(get_games(steamid), indent=4)
+            return jsonify(get_games(steamid))
         else:
             return abort(404)
-    resp = Response(games, status=200, mimetype='application/json')
-    resp.headers['Link'] = 'http://steamdata.herokuapp.com'
-    return resp
-
+    
 if __name__ == '__main__':
     app.run(debug=True)

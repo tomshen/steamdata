@@ -21,20 +21,26 @@ def is_steamid(id):
 
 @app.route('/')
 def home():
+    return render_template('index.html')
+    """
     if request.args.get('steamid', ''):
         return render_template('index.html', steamid=request.args.get('steamid', ''))
     else:
         return render_template('index.html', steamid='')
+    """
+
+@app.route('/games')
+@app.route('/games/')
+@app.route('/games/<steamid>')
+def page_games(steamid=''):
+    return render_template('games.html', steamid=steamid)
 
 @app.route('/graph')
+@app.route('/graph/')
 @app.route('/graph/<steamid>')
 def page_graph(steamid=''):
     return render_template('graph.html', steamid=steamid)
 
-"""
-REQUIRES: is_steamid(steamid)
-ENSURES: returns a list of friends for `steamid`
-"""
 def get_friends(steamid):
     try:
         req = requests.get('http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=' 
@@ -43,19 +49,11 @@ def get_friends(steamid):
     except:
         return steamid + ' has no friends :('
 
-"""
-REQUIRES: is_steamid(steamid)
-ENSURES: returns an info dictionary for `steamid`
-"""
 def get_info(steamid):
     req = requests.get('http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=' 
                            + STEAM_API_KEY + '&steamids=' + steamid + '&format=json')
     return req.json()['response']['players'][0]
 
-"""
-REQUIRES: is_steamid(steamid)
-ENSURES: returns an game object (with `game_count`, list of `games`) for `steamid`
-"""
 def get_games(steamid):
     req = requests.get('http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=' 
                        + STEAM_API_KEY + '&steamid=' + str(steamid) + 
@@ -85,6 +83,7 @@ def graph_friends(steamid, depth=1):
             return [] # User has not exposed friends list to public.
 
 @app.route('/api/graph/<steamid>')
+@app.route('/api/graph/<steamid>/')
 @app.route('/api/graph/<steamid>/<depth>')
 @crossdomain(origin='*')
 def graph(steamid, depth=1):
@@ -94,7 +93,7 @@ def graph(steamid, depth=1):
         except:
             return abort(404)
     else:
-        return abort(404)
+        return abort(400)
 
 @app.route('/api/friends/<steamid>')
 @crossdomain(origin='*')
@@ -102,7 +101,7 @@ def friends(steamid):
     if is_steamid(steamid):
         return jsonify({'steamid': steamid, 'friends':get_friends(steamid)})
     else:
-        return abort(404)
+        return abort(400)
 
 @app.route('/api/info/<steamid>')
 @crossdomain(origin='*')
@@ -110,9 +109,10 @@ def info(steamid):
     if is_steamid(steamid):
         return jsonify(get_info(steamid))
     else:
-        return abort(404)
+        return abort(400)
 
 @app.route('/api/games')
+@app.route('/api/games/')
 @app.route('/api/games/<steamid>')
 @crossdomain(origin='*')
 def games(steamid=None):
@@ -126,7 +126,7 @@ def games(steamid=None):
         if is_steamid(steamid):
             return jsonify(get_games(steamid))
         else:
-            return abort(404)
+            return abort(400)
     
 if __name__ == '__main__':
     app.run(debug=True)

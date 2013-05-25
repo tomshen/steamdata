@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Steam Data - Games</title>
+  <meta name="description" content="Steam Data is an unofficial API for Steam.">
+  <meta name="author" content="Tom Shen">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Ropa+Sans">
+  <link rel="stylesheet" href="/static/reset.css">
+  <link rel="stylesheet" href="/static/base.css">
+  <link rel="stylesheet" href="/static/games.css">
+</head>
+<body>
+  <section>
+    <header><h1>Steam Games</h1></header>
+    <div id="container">
+      {% if not steamid %}
+      <div id="info">
+        <p>
+          Enter your <a href="http://steamidfinder.com/" target="_blank">Steam ID</a> to display
+          a table of all your Steam games.
+        </p>
+        <p>
+          <label>Steam ID:</label>
+          <input id="steamidinput" type="text" placeholder="http://steamcommunity.com/id/7656119xxxxxxxxxx" size=50>
+          <button id="loadgames">Load your Steam library!</button>
+        </p>
+      </div>
+      {% endif %}
+    </div>
+    <footer>
+      Created by <a href="http://www.tomshen.me/">Tom Shen</a> ·
+      Source code on <a href="https://www.github.com/tomshen/steamdata">GitHub</a> ·
+      Powered by <a href="http://www.steampowered.com">Steam</a>
+    </footer>
+  </section>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script type="text/javascript">var steamid = '{{ steamid }}'</script>
+  <script src="/static/steamdata.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+section {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+#games
+{
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 1em;
+  text-align: left;
+  border-bottom: none;
+}
+#games tr {
+  height: 40px;
+}
+#games th
+{
+  font-size: 150%;
+  font-weight: bold;
+  border-bottom: 2px solid lightgrey;
+}
+#games td
+{
+  vertical-align: middle;
+}

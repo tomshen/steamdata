@@ -1,5 +1,5 @@
-# steamdata
-An enhanced API for [Steam](http://www.steampowered.com/).
+# Steam Data
+Steam Data is an unofficial, enhanced API for [Steam](http://www.steampowered.com/).
 
 ## Usage
 Make a GET request to:
@@ -16,7 +16,7 @@ All results returned in the JSON format.
 ## Example apps
 
 ### Steam Game Library
-Available at `/`. Enter your Steam ID to view a list of your Steam games, with
+Available at `/games`. Enter your Steam ID to view a list of your Steam games, with
 associated metadata.
 
 ### Steam Friend Graph

@@ -1,34 +1,81 @@
 <!doctype html>
 <html>
 <head>
-  <title>Steam Game Data</title>
-  <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic|Lobster' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/static/reset.css" type="text/css">
-  <link rel="stylesheet" href="/static/style.css" type="text/css">
+  <meta charset="utf-8">
+  <title>Steam Data</title>
+  <meta name="description" content="Steam Data is an unofficial, enhanced API for
+  Steam.">
+  <meta name="author" content="Tom Shen">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Ropa+Sans">
+  <link rel="stylesheet" href="/static/reset.css">
+  <link rel="stylesheet" href="/static/base.css">
+  <link rel="stylesheet" href="/static/index.css">
 </head>
 <body>
   <section>
-    <header>Steam Games</header>
-    <div id="container">
-      <div id="info" style="display:none">
-        <p>
-          Enter your <a href="http://steamidfinder.com/" target="_blank">Steam ID</a> to display
-          a table of all your Steam games.
-        </p>
-        <p>
-          <label>Steam ID:</label>
-          <input id="steamidinput" type="text" placeholder="http://steamcommunity.com/id/7656119xxxxxxxxxx" size=50>
-          <button id="loadgames">Load your Steam library!</button>
-        </p>
-      </div>
-    </div>
+    <header><h1>STEAM Data</h1></header>
+    <p>
+      <a href="http://www.steampowered.com">Steam</a> is a
+      digital distribution platform and community (mostly for video games) run by
+      the Valve Corporation. It's the largest and most popular video game store
+      and community on the Internet--and thus they have all the data. Unfortunately, 
+      their <a href="http://steamcommunity.com/dev">Web API</a> doesn't offer much
+      access to their games library information. <strong>Steam Data</strong> seeks
+      to offer a very simple REST API to access this mine of data.
+    </p>
+
+    <h2>Usage</h2>
+    <table>
+      <thead><tr>
+          <th class="table_req">Request</td>
+          <th class="table_res">Response</td>
+      </tr></thead>
+      <tr>
+        <td class="table_req"><code>GET /api/games</code></td>
+        <td class="table_res">object containing <code>game_count</code> and array 
+        of all games on Steam, called <code>games</code></td>
+      </tr>
+      <tr>
+        <td class="table_req"><code>GET /api/games/&lt;steamid&gt;</code></td>
+        <td class="table_res">object containing <code>game_count</code> and an 
+        array of all Steam games owned by <code>&lt;steamid&gt;</code>, called 
+        <code>games</code></td>
+      </tr>
+      <tr>
+        <td class="table_req"><code>GET /api/info/&lt;steamid&gt;</code></td>
+        <td class="table_res">object containing all publically exposed info in the
+        Steam profile of <code>&lt;steamid&gt;</code></td>
+      </tr>
+      <tr>
+        <td class="table_req"><code>GET /api/friends/&lt;steamid&gt;</code></td>
+        <td class="table_res">object containing <code>&lt;steamid&gt;</code> and
+        all the Steam friends of <code>&lt;steamid&gt;</code> (if publically
+        exposed)</td>
+      </tr>
+      <tr>
+        <td class="table_req"><code>GET /api/graph/&lt;steamid&gt;/&lt;depth&gt;</code></td>
+        <td class="table_res">object containing <code>&lt;steamid&gt;</code> and
+        graph of friends of Steam friends of <code>&lt;steamid&gt;</code>, with 
+        depth <code>&lt;depth&gt;</code> (<code>&lt;depth&gt;</code> is optional,
+        and defaults to 1)</td>
+      </tr>
+    </table>
+    <p>All results returned in the JSON format.</p>
+
+    <h2>Example apps</h2>
+
+    <h3><a href="/games">Steam Game Library</a></h3>
+    <p>Enter your Steam ID to view a list of your Steam games, with associated metadata.</p>
+
+    <h3><a href="#">Steam Friend Graph</a></h3>
+    <p>View a graph of your Steam friends. Currently under development (Go yell 
+    at <a href="http://www.tpoulos.me">Taylor Poulos</a> if you want to see it sooner.</p>
+
     <footer>
-      Created by <a href="http://www.tomshen.me/">Tom Shen</a>. 
-      Source code on <a href="https://www.github.com/tomshen/steamdata">GitHub</a>.
+      Created by <a href="http://www.tomshen.me/">Tom Shen</a> ·
+      Source code on <a href="https://www.github.com/tomshen/steamdata">GitHub</a> ·
+      Powered by <a href="http://www.steampowered.com">Steam</a>
     </footer>
   </section>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script type="text/javascript">var steamid = '{{ steamid }}'</script>
-  <script src="/static/steamdata.js"></script>
 </body>
 </html>

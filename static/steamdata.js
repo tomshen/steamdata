@@ -1,6 +1,6 @@
 $.getJSON('/api/games', function(all_games) {
   document.querySelector('footer').innerHTML += 
-      'Steam data last updated on ' + all_games.last_updated.slice(0,10) + '.'
+      ' · Steam data last updated ' + all_games.last_updated.slice(0,10)
   function format_games_data(data) {
     function format_game_data(game) {
       var img_url = 'http://media.steampowered.com/steamcommunity/public/images/apps/'
@@ -62,7 +62,7 @@ $.getJSON('/api/games', function(all_games) {
             var name = data.realname || data.personaname || 'Anonymous'
             var profileurl = data.profileurl
             document.querySelector('header').innerHTML =
-                '<a href="' + profileurl + '">' + name + '\'s Steam Library</a>'
+                '<h1><a href="' + profileurl + '">' + name + '\'s Steam Library</a></h1>'
           } catch(e) {}
         })
         $.getJSON('/api/games/' + steamid, function(data) {
@@ -87,15 +87,12 @@ $.getJSON('/api/games', function(all_games) {
       steamid = steamid.slice(steamid.lastIndexOf('/')+1)
     }
     if(is_steamid(steamid)) {
-      window.location = '/?steamid=' + steamid
+      window.location = '/games/' + steamid
     } else {
       alert('Please enter a valid Steam ID.')
     }
   }) 
   if(steamid) {
     load_steam_data(String(steamid))
-  }
-  else {
-    $('#info').show()
   }
 })

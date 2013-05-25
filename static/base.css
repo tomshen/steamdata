@@ -1,0 +1,84 @@
+body {
+  font-family: "Source Sans Pro", Verdana, sans-serif;
+  background: white;
+}
+
+h1, h2, h3 {
+  font-family: "Ropa Sans", Helvetica, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+h1 {
+  font-size: 400%;
+  padding: 10px 0;
+}
+
+h2, h3 {
+  padding: 5px 0;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 100%;
+}
+
+strong, b {
+  font-weight: bold;
+  color: #333;
+}
+
+a, a:visited {
+  color: #299;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.6;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+header {
+  color: #333;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #111;
+  line-height: 125%;
+  padding-bottom: 1em;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+table {
+  border-bottom: 2px solid lightgrey;
+}
+th
+{
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid lightgrey;
+}
+td {
+  padding: 0.2em 0;
+}
+
+
+footer {
+  border-top: 2px solid lightgrey;
+  padding: 1em;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 90%;
+  text-align: center;
+}

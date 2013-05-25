@@ -32,35 +32,34 @@
       </tr></thead>
       <tr>
         <td class="table_req"><code>GET /api/games</code></td>
-        <td class="table_res">object containing <code>game_count</code> and array 
+        <td class="table_res">JSON object containing <code>game_count</code> and array 
         of all games on Steam, called <code>games</code></td>
       </tr>
       <tr>
         <td class="table_req"><code>GET /api/games/&lt;steamid&gt;</code></td>
-        <td class="table_res">object containing <code>game_count</code> and an 
+        <td class="table_res">JSON object containing <code>game_count</code> and an 
         array of all Steam games owned by <code>&lt;steamid&gt;</code>, called 
         <code>games</code></td>
       </tr>
       <tr>
         <td class="table_req"><code>GET /api/info/&lt;steamid&gt;</code></td>
-        <td class="table_res">object containing all publically exposed info in the
+        <td class="table_res">JSON object containing all publically exposed info in the
         Steam profile of <code>&lt;steamid&gt;</code></td>
       </tr>
       <tr>
         <td class="table_req"><code>GET /api/friends/&lt;steamid&gt;</code></td>
-        <td class="table_res">object containing <code>&lt;steamid&gt;</code> and
+        <td class="table_res">JSON object containing <code>&lt;steamid&gt;</code> and
         all the Steam friends of <code>&lt;steamid&gt;</code> (if publically
         exposed)</td>
       </tr>
       <tr>
         <td class="table_req"><code>GET /api/graph/&lt;steamid&gt;/&lt;depth&gt;</code></td>
-        <td class="table_res">object containing <code>&lt;steamid&gt;</code> and
+        <td class="table_res">JSON object containing <code>&lt;steamid&gt;</code> and
         graph of friends of Steam friends of <code>&lt;steamid&gt;</code>, with 
         depth <code>&lt;depth&gt;</code> (<code>&lt;depth&gt;</code> is optional,
         and defaults to 1)</td>
       </tr>
     </table>
-    <p>All results returned in the JSON format.</p>
 
     <h2>Example apps</h2>
 

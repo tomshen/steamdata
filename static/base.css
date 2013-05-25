@@ -15,7 +15,7 @@ h1 {
 }
 
 h2, h3 {
-  padding: 5px 0;
+  padding: 0.2em 0;
 }
 
 h2 {
@@ -60,6 +60,7 @@ code {
 }
 
 table {
+  margin-bottom: 1em;
   border-bottom: 2px solid lightgrey;
 }
 th

@@ -71,6 +71,8 @@ $.getJSON('/api/games', function(all_games) {
                + '</strong> out of <strong>' + all_games.game_count 
                + '</strong> total Steam games.</p>'
           document.getElementById('container').innerHTML += format_games_data(data)
+          $('#floatingBarsG').hide()
+          $('section').show()
         })
       } catch(e) {
         alert('Please enter a valid Steam ID.')

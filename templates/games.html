@@ -6,16 +6,34 @@
   <meta name="description" content="Steam Data is an unofficial API for Steam.">
   <meta name="author" content="Tom Shen">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Ropa+Sans">
-  <link rel="stylesheet" href="/static/reset.css">
+  <link rel="stylesheet" href="/static/normalize.css">
   <link rel="stylesheet" href="/static/base.css">
+  <link rel="stylesheet" href="/static/loader.css">
   <link rel="stylesheet" href="/static/games.css">
 </head>
 <body>
-  <section>
+  <div id="floatingBarsG" {% if not steamid %}style="display: none"{% endif %}>
+    <div class="blockG" id="rotateG_01">
+    </div>
+    <div class="blockG" id="rotateG_02">
+    </div>
+    <div class="blockG" id="rotateG_03">
+    </div>
+    <div class="blockG" id="rotateG_04">
+    </div>
+    <div class="blockG" id="rotateG_05">
+    </div>
+    <div class="blockG" id="rotateG_06">
+    </div>
+    <div class="blockG" id="rotateG_07">
+    </div>
+    <div class="blockG" id="rotateG_08">
+    </div>
+  </div>
+  <section {% if steamid %}style="display: none"{% endif %}>
     <header><h1>Steam Games</h1></header>
     <div id="container">
-      {% if not steamid %}
-      <div id="info">
+      {% if not steamid %}<div id="info">
         <p>
           Enter your <a href="http://steamidfinder.com/" target="_blank">Steam ID</a> to display
           a table of all your Steam games.
@@ -25,8 +43,7 @@
           <input id="steamidinput" type="text" placeholder="http://steamcommunity.com/id/7656119xxxxxxxxxx" size=50>
           <button id="loadgames">Load your Steam library!</button>
         </p>
-      </div>
-      {% endif %}
+      </div>{% endif %}
     </div>
     <footer>
       Created by <a href="http://www.tomshen.me/">Tom Shen</a> ·

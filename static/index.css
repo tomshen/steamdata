@@ -1,7 +1,8 @@
-body {
-  padding: 2em 25%;
+section {
+  margin: 0 15%;
+  min-width: 570px;
 }
 
 .table_req {
-  min-width: 20em;
+  min-width: 12em;
 }
